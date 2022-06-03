@@ -1,0 +1,30 @@
+.advantages {
+    background: #242B33;
+    position: relative;
+    &__content {
+        max-width: 794px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+
+    &__icon{
+        display:flex;
+        justify-content: center;
+        margin-bottom: 58px;
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+}

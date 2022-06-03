@@ -1,0 +1,119 @@
+// header menu and logo
+
+.header {
+    background: url("../img/main_backround.png") center center/cover no-repeat;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 840px;
+    
+    &__container {
+        display: flex;
+        min-height: 66px;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 405px 0;
+
+
+}
+    &__logo {
+        width: 134px;
+        height: 66px;
+        margin-right: 435px;
+      
+     
+    }
+    &__menu {
+        min-width: 541px;      
+    }
+
+}
+
+.menu{
+    &__list {
+        display: flex;
+      
+    }
+    &__item:not(:first-child){
+        margin: 0 0 0 40px; 
+    }
+    &__item :hover{
+        color: #D4C17F;
+    }
+
+    &__link {
+        color: #ffffff;
+        line-height: 114%;
+        font-weight: 400;
+        font-size: 14px;
+        
+    }
+}
+
+
+// header content
+
+.header-content {
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 556px;
+        margin: 0 auto;
+        margin-top: 183px;
+
+    }
+    &__title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+        color: #D4C17F;
+        margin-bottom: 100px;
+    }
+
+    &__element {
+        animation: downUp 1.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both; 
+}
+
+@keyframes downUp {
+	from {
+		transform: translateY(-50px);
+	}
+
+	to {
+		transform: translateY(5px);
+	}
+}
+
+    &__contacts {
+        margin-top: 200px;
+        display: flex;
+        width: 100%;
+	    display: flex;
+	    justify-content: space-between;
+	    padding-bottom: 60px;
+        
+
+        &-item {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                color: #FFFFFF;
+                text-decoration: none;
+	            display: flex;
+	            align-items: center;
+	            transition: all .09s ease-out;
+                &:hover {
+                    color: #D4C17F;
+                }
+                img {
+                    margin-right: 15px;
+                }
+            }
+    }
+
+}
+
+
